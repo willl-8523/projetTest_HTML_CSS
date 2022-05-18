@@ -1,24 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>Titre de la page</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<!--    <h1>Hello World Hardcoders</h1>-->
-    <h2>Mocha Fan Page</h2>
-    <main>
-        <p>
-            Doggo ipsum snoot most angery pupper I have ever   seen lotsa pats corgo, he
-            made many woofs. aqua doggo. Blop wrinkler yapper sub woofer shoob doge,
-            extremely cuuuuuute doggo puggorino. Long bois  borkf dat tungg tho floofs
-            length boy, what a nice floof fat boi shibe, long woofer pupperino dat
-            tungg tho.
+    <head>
+      <meta charset="utf-8">
+      <title>Titre de la page</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <!--    <h1>Hello World Hardcoders</h1>-->
+
+<!--        <h2 id="mocha-h2" style="color: blue; font-size: 2rem;">Tortue Géniale Fan Page</h2>-->
+        <h2 id="mocha-h2">Tortue Géniale Fan Page</h2>
+        <a href="#footer">Allez au footer</a>
+        <a href="#">
+            <img alt="Mocha Turtle" src="images/turtle-image.jpg"/>
+        </a>
+        <p>Voir plus d'
+            <a href="#" target="_blank">image de tortue</a>
         </p>
-        <p>
-            Noodle horse boof long water shoob wow such tempt, wrinkler borking doggo. H*ck heck you are doin me a concern he made many woofs heckin good boys and girls, pupper puggo heckin angery woofer. You are doing me a frighten puggorino thicc, puggorino. Woofer snoot sub woofer doggo very taste wow long bois, heck floofs porgo.
-        </p>
-    </main>
-</body>
-</html>
+        <main>
+            <div>
+                <p>3 choses que tortue géniale déteste</p>
+                <ol>
+                    <li>
+                        Les caresses
+                    </li>
+                    <li>
+                        les proteines animales
+                    </li>
+                    <li>
+                        les lieux etroits
+                    </li>
+                    <li>
+                        <form action="#">
+                            <input required placeholder="ce que deteste tortue géniale" type="text"/>
+                        </form>
+                        <!-- l'adresse dans action correspond au lien qui recuperera les données rentrées dans l'input -->
+                    </li>
+                </ol>
+            </div>
+
+            <div>
+                <p>3 choses que tortue géniale aime</p>
+                <ol>
+                    <li>
+                        L'eau
+                    </li>
+                    <li>
+                        Les fruits
+                    </li>
+
+                    <li>
+                        Les végétaux (fleurs, plantain, feuille de radis...)
+                    </li>
+                    <li>
+                        <form action="#">
+                            <input required placeholder="ce que aime tortue géniale" type="text"/>
+        <!--                    L'attribut "required" oblige l'ux a remplir le input -->
+                        </form>
+                    </li>
+                </ol>
+            </div>
+
+            <form action="#">
+                <p>Où souhaitez-vous installer tortue géniale ?</p>
+                <label for="terrarium">
+                    <input id="terrarium" type="radio" name="terrarium_enclot-ouvert" value="terrarium" checked/>
+                    Terrarium
+                </label>
+                <label for="enclot-ouvert">
+                    <input id="enclot-ouvert" type="radio" name="terrarium_enclot-ouvert" value="enclot-ouvert"/>
+                    Enclôt ouvert
+                </label>
+    <!--            le "for" dans le label permet de faire le lien entre le label et l'input-->
+    <!--            le name dans l'input permet de lier les input entre elles -->
+    <!--            value permet de retrouver ce dont l'ux à choisi (il est recommandé de choisir le nom du label pour l'associer à value)-->
+    <!--            checked permet la selection par defaut-->
+    <!--            self-closing tag sont des elements qui n'ont pas de balise fermante-->
+                <p>
+                    Quelle(s) accessoire(s) souhaitez-vous ajouter à tortue géniale:
+                </p>
+                <label for="lunette">
+                    <input id="lunette" type="checkbox" name="accessoires" value="lunette" checked/>
+                    Lunettes
+                </label>
+                <label for="chapeau">
+                    <input id="chapeau" type="checkbox" name="accessoires" value="chapeau-cowboy"/>
+                    Chapeau de Cowboy
+                </label>
+                <label for="tatouage">
+                    <input id="chapeau" type="checkbox" name="accessoires" value="tatouage"/>
+                    Un tatouage sur la carapace
+                </label>
+                <button type="submit">Envoyer</button>
+            </form>
+            <a href="#mocha-h2">Allez au haut de la page</a>
+        </main>
+        
+        <footer id="footer">Copyright © Mocha Inc</footer>
+        
+    </body>
+</html> 
