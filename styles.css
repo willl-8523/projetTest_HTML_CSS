@@ -16,23 +16,28 @@ html, body {
           color: var(--yellowColor)  // --yellowColor: yellow
     
     Lorsqu'une variable est declarer dans root, elle est accessible a tout le document
-*/
     
-    padding: 0;
-    margin: 0;
-    background-color: aliceblue;
-}
+    box-shadow : decalage sur l'axe x (+ -> la doite et - -> la gauche ) - decalage sur y (+ -> le bas et - -> le haut ) - le flou - etalement de l'ombre - couleur rgba
+    box-shadow: 0 30 5px 5px rgba(0, 0, 0, 0.2)
+    
+    offset-x | offset-y | blur-radius | color 
+    box-shadow: 10px 5px 5px black;
+    
+    inherit => herite de la valeur de son parent 
+*/
 
 h2 {
-    color: #0ff;
+    color: #BADA55;
     font-family: "Balsamiq Sans";
-    background-color: aliceblue;
+    background-color:aliceblue;
 }
 
 .display-img {
     height: 300px;
+    
 /*    max-width: 300px // 300px ou moins */
 /*    min-width: 300px // 300 ou plus */
+
     width: 300px;
     display: block;
     margin: 10px 0;
@@ -51,11 +56,10 @@ a {
     text-decoration: none;
 }
 
-/*
 .silver-background {
     background-color: aliceblue;
 }
-*/
+
 p {
     margin: 10px 0px;
     font-family: monospace;
