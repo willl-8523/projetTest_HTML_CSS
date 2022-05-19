@@ -1,0 +1,87 @@
+
+
+html, body {
+/*    margin : 0 => top-right-bottom-left*/
+    
+/*    padding: 1.5em; => em = taille en fonction de la taille police du contenu*/
+    
+/*    regle de priorité css => element < class < id < style directement sur l'element < !important (color: blue !important) */
+    
+/*  Declaration de variable => --nom_variable: couleur
+    Apelle de variable => var(--nom_variable, couleur(si --nom_variable n'est oas trouvé))
+    
+    Lorsqu'on déclare une variable dans un element ou class ou id, il agit sur ses enfants
+    Les anciens navigateurs ne lisant pas de variable, pour palier a cela il est conseiller de rajouter une couleur en dur
+    EXP : color: yellow             // pour les anciens navigateur
+          color: var(--yellowColor)  // --yellowColor: yellow
+    
+    Lorsqu'une variable est declarer dans root, elle est accessible a tout le document
+*/
+    
+    padding: 0;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+h2 {
+    color: #0ff;
+    font-family: "Balsamiq Sans";
+    background-color: aliceblue;
+}
+
+.display-img {
+    height: 300px;
+/*    max-width: 300px // 300px ou moins */
+/*    min-width: 300px // 300 ou plus */
+    width: 300px;
+    display: block;
+    margin: 10px 0;
+}
+
+.border-img {
+/*    border: 1px solid #BADA55 => */
+    border-width: 10px;
+    border-style: solid;
+    border-color: aliceblue;
+/*   ------------------------- */
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+.silver-background {
+    background-color: aliceblue;
+}
+*/
+p {
+    margin: 10px 0px;
+    font-family: monospace;
+}
+
+ol {
+    margin: 5px 0px;
+}
+
+label {
+    display: block;
+}
+
+button {
+    margin: 10px 0;
+}
+
+/* Selectionner input de type radio */
+[type="radio"] {
+    margin: 10px 0 10px 0;
+}
+
+[type="checkbox"] {
+    margin: 10px 0 10px 0;
+}
+
+footer {
+    margin-top: 20px;
+}
