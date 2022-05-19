@@ -24,15 +24,17 @@ html, body {
 }
 
 h2 {
-    color: #0ff;
+    color: #BADA55;
     font-family: "Balsamiq Sans";
-    background-color: aliceblue;
+    background-color:aliceblue;
 }
 
 .display-img {
     height: 300px;
+    
 /*    max-width: 300px // 300px ou moins */
 /*    min-width: 300px // 300 ou plus */
+
     width: 300px;
     display: block;
     margin: 10px 0;
@@ -51,11 +53,10 @@ a {
     text-decoration: none;
 }
 
-/*
 .silver-background {
     background-color: aliceblue;
 }
-*/
+
 p {
     margin: 10px 0px;
     font-family: monospace;
